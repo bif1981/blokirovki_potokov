@@ -1,0 +1,10 @@
+class Sick(td.Thread):
+    def __init__(self, name, temperature):
+        super().__init__(name=name)
+         self.__temperature = temperature
+
+
+    def run(self):
+        day = 1 print(f'Пациент {self.name} поступил на лечение')
+         while self.__temperature > 36.6:
+          print(f'Пациент {self.name}, день - {day}, температура - {self.__temperature}') self.__temperature = round(self.__temperature - uniform(0.1, 0.5), 2) day = 1 sleep(1) th1
